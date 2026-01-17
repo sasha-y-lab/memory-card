@@ -1,0 +1,287 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 400px;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  justify-content: center;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+#formbox {
+  max-width: 400px;      /* or whatever width you want */
+  width: 100%;
+  margin: 0 auto;        /* center horizontally */
+}
+
+/*
+#personal-formbox {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 4;
+  row-gap: 10px;
+}
+
+label {
+grid-column: 1 / 1;
+
+}
+
+input {
+
+  grid-column: 2 / 2;
+
+}
+  */
+
+  /*
+ul {
+  display: grid;
+  grid-template-columns: 2;
+  row-gap: 10px;
+
+}
+
+li {
+  display:inline-block;
+
+}
+
+#labels {
+grid-column: 1 / 2;
+display: flex;
+flex-direction: column;
+
+}
+
+#inputs {
+grid-column: 2 / 2;
+
+display: flex;
+flex-direction: column;
+row-gap: 15px;
+}
+
+#submit {
+
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+
+}
+*/
+
+#CVPrintout {
+  
+display: grid;
+grid-template-columns: 3;
+grid-template-rows: 6;
+width: 350px;
+padding: 100px;
+border-color: black;
+border-width: 3px;
+border-style: solid;
+margin-top: 100px;
+padding-left: 100px;
+
+
+}
+
+#personalDetails {
+  column-gap: 10px;
+  font-size: 30px;
+  grid-row: 1 / 6;
+  grid-column: 1 / 3;
+  align-items: center;
+  column-gap: 20px;
+  text-align: center;
+  
+  
+}
+
+#contactDetails {
+  display: grid;
+  padding-bottom: 50px;
+  padding-top: 25px;
+  font-size: 16px;
+  text-align: center;
+  row-gap: 10px;
+  grid-row: 2 / 6;
+  align-self: center;
+
+
+}
+
+
+
+#educationDetails {
+grid-row: 6 / 6;
+grid-column: 1 / 3;
+display: flex;
+flex-direction: column;
+row-gap: 5px;
+
+}
+
+.educationItem, .workItem {
+ 
+  margin-bottom: 2px;
+}
+
+#workDetails {
+grid-row: 7 / 7;
+grid-column: 1 / 3;
+display: flex;
+flex-direction: column;
+row-gap: 5px;
+
+}
+
+#addDelSect {
+display: flex;
+flex-direction: row;
+justify-content: end;
+
+}
+
+#addDelSect button:hover {
+
+  border-color: green;
+}
+
+
+
+
+#header2 {
+background-color: #2EC4B6;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 2px;
+padding-bottom: 2px;
+border-radius: 8px;
+margin-bottom: 10px;
+grid-row: 2;
+}
+
+
+form {
+display: flex;
+flex-direction: column;
+row-gap: 8px;
+justify-content: center;
+
+
+}
+
+label {
+display: flex;
+flex-direction: column;
+}
+
+input {
+  width: auto;
+}
+
+button {
+  display: flex;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: 0px;
+ 
+}
+
+h3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.isVisible {
+visibility: visible;
+}
+
+.hidden {
+  visibility: hidden; 
+}
+
+#checkmark {
+  display:flex;
+  flex-direction: row;
+  
+}
+
+#educationSection, #personalSection, #workSection {
+
+padding-left: 100px;
+padding-right: 100px;
+
+}
