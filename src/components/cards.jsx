@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function Cards({ onGameOver }) {
+function Cards({ onGameOver, onScoreUpdate }) {
   const [cards, setCards] = useState([]);
   const [flipped, setFlipped] = useState([]);
   const [matched, setMatched] = useState([]);
@@ -45,19 +45,26 @@ function Cards({ onGameOver }) {
     const newFlipped = [...flipped, index];
     setFlipped(newFlipped);
 
+    // Only check when two cards are flipped
     if (newFlipped.length === 2) {
       const [firstIndex, secondIndex] = newFlipped;
 
       if (cards[firstIndex].gifUrl === cards[secondIndex].gifUrl) {
+        // ✅ Correct match
         const newMatched = [...matched, firstIndex, secondIndex];
         setMatched(newMatched);
         setFlipped([]);
 
-        // Call game over if all matched
+        if (onScoreUpdate) onScoreUpdate(1); // +1 point for match
+
+        // Game over if all matched
         if (newMatched.length === cards.length) {
           onGameOver();
         }
       } else {
+        // ❌ Wrong match
+        if (onScoreUpdate) onScoreUpdate(-1); // -1 point for mismatch
+
         setDisableAll(true);
         setTimeout(() => {
           setFlipped([]);

@@ -25,15 +25,15 @@ function PlayScreen({ onSubmit, totalScore, setTotalScore }) {
   };
 
   const handlePlayAgain = () => {
-    // Add roundScore to totalScore
+    // ✅ Add current round score to total score first
     setTotalScore(prev => prev + roundScore);
 
-    // Reset round score
+    // ✅ Reset round score for next game
     setRoundScore(0);
 
     // Reset game
     setGameOver(false);
-    onSubmit(); // trigger remount from Display.jsx
+    onSubmit(); // trigger remount
   };
 
   return (

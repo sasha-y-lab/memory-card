@@ -18,11 +18,11 @@ function Display() {
       {!gameStarted && <Instructions onSubmit={handleStartGame} />}
       {gameStarted && (
         <PlayScreen
-          key={gameKey}
-          onSubmit={handleRestartGame}
-          totalScore={totalScore}
-          setTotalScore={setTotalScore}
-        />
+  key={gameKey}
+  onSubmit={handleRestartGame}
+  totalScore={totalScore}
+  setTotalScore={setTotalScore}
+/>
       )}
     </>
   );
