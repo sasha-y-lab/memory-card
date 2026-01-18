@@ -4,8 +4,9 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color: rgba(255, 255, 255, 0.87); */
+  /*background-color: #242424; */
+  color: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,6 +14,7 @@
   -moz-osx-font-smoothing: grayscale;
   
 }
+
 
 a {
   font-weight: 500;
@@ -32,6 +34,8 @@ body {
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+  background-color: #ffffff;
+  /* background-color: #E39EC1; */
   
 }
 
@@ -42,246 +46,156 @@ h1 {
   text-align: center;
   padding-left: 100px;
   padding-right: 100px;
+
 }
 
-button {
+.titleSection {
+  text-align: center;
+  padding: 1rem;
+  
+  
+}
+
+.game-title {
+  font-size: 3rem;
+  
+}
+
+#instructions {
+
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-#formbox {
-  max-width: 400px;      /* or whatever width you want */
-  width: 100%;
-  margin: 0 auto;        /* center horizontally */
-}
-
-/*
-#personal-formbox {
-  display: grid;
-  grid-template-columns: 2;
-  grid-template-rows: 4;
-  row-gap: 10px;
-}
-
-label {
-grid-column: 1 / 1;
-
-}
-
-input {
-
-  grid-column: 2 / 2;
-
-}
-  */
-
-  /*
-ul {
-  display: grid;
-  grid-template-columns: 2;
-  row-gap: 10px;
-
-}
-
-li {
-  display:inline-block;
-
-}
-
-#labels {
-grid-column: 1 / 2;
-display: flex;
-flex-direction: column;
-
-}
-
-#inputs {
-grid-column: 2 / 2;
-
-display: flex;
-flex-direction: column;
-row-gap: 15px;
-}
-
-#submit {
-
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-
-}
-*/
-
-#CVPrintout {
-  
-display: grid;
-grid-template-columns: 3;
-grid-template-rows: 6;
-width: 350px;
-padding: 100px;
-border-color: black;
-border-width: 3px;
-border-style: solid;
-margin-top: 100px;
-padding-left: 100px;
-
-
-}
-
-#personalDetails {
-  column-gap: 10px;
-  font-size: 30px;
-  grid-row: 1 / 6;
-  grid-column: 1 / 3;
-  align-items: center;
-  column-gap: 20px;
-  text-align: center;
-  
-  
-}
-
-#contactDetails {
-  display: grid;
-  padding-bottom: 50px;
-  padding-top: 25px;
-  font-size: 16px;
-  text-align: center;
-  row-gap: 10px;
-  grid-row: 2 / 6;
-  align-self: center;
-
-
-}
-
-
-
-#educationDetails {
-grid-row: 6 / 6;
-grid-column: 1 / 3;
-display: flex;
-flex-direction: column;
-row-gap: 5px;
-
-}
-
-.educationItem, .workItem {
- 
-  margin-bottom: 2px;
-}
-
-#workDetails {
-grid-row: 7 / 7;
-grid-column: 1 / 3;
-display: flex;
-flex-direction: column;
-row-gap: 5px;
-
-}
-
-#addDelSect {
-display: flex;
-flex-direction: row;
-justify-content: end;
-
-}
-
-#addDelSect button:hover {
-
-  border-color: green;
-}
-
-
-
-
-#header2 {
-background-color: #2EC4B6;
-padding-left: 20px;
-padding-right: 20px;
-padding-top: 2px;
-padding-bottom: 2px;
-border-radius: 8px;
-margin-bottom: 10px;
-grid-row: 2;
-}
-
-
-form {
-display: flex;
-flex-direction: column;
-row-gap: 8px;
-justify-content: center;
-
-
-}
-
-label {
-display: flex;
-flex-direction: column;
-}
-
-input {
-  width: auto;
+ /* background-color: #048BA8; */
+ background-color: #E39EC1;
+ padding: 50px;
+box-shadow: 0 4px 10px rgb(0, 0, 0);
 }
 
 button {
-  display: flex;
-  align-self: flex-end;
-  margin-left: auto;
-  margin-right: 0px;
- 
-}
-
-h3 {
-  display: flex;
-  flex-direction: row;
-}
-
-.isVisible {
-visibility: visible;
-}
-
-.hidden {
-  visibility: hidden; 
-}
-
-#checkmark {
-  display:flex;
-  flex-direction: row;
+  background-color: #048BA8;
+  border-radius: 8px; 
+  padding: 5px;
+  display: inline-block;
+  min-width: 150px;
+  min-height: 35px;
+  font-weight: 600;
+  
   
 }
 
-#educationSection, #personalSection, #workSection {
+#playSection {
+  display: flex;
+  justify-content: end;
+  z-index: 2;
+  margin-top: -50px;
+  margin-right: 100px;
+  
 
-padding-left: 100px;
-padding-right: 100px;
 
+}
+
+
+#screenSection {
+  /* margin-top: 100px; */
+  background-color: #E0CA3C;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  width: 500vw;
+  max-width: 1200px; /* limits how wide it grows on large screens */
+  margin-left: auto;
+  margin-right: auto; /* center on large screens */
+  box-sizing: border-box; /* include padding in width */
+  
+  border-radius: 5px;
+  row-gap: 50px;
+ 
+}
+
+/* Medium screens */
+@media (max-width: 1024px) {
+  #screenSection {
+    max-width: 90%; /* shrink proportionally */
+    padding: 0 1.5rem;
+    
+  }
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  #screenSection {
+    max-width: 95%; /* almost full width */
+    padding: 0 1rem;
+    
+  }
+}
+
+#scoreSection {
+margin-left: auto;
+margin-right: auto;
+
+width: 300px;
+height: 100px;
+background-color: #ffffff;
+color: #2E4057;
+font-weight: 600px;
+
+border-width: 5px;
+border-color: #000000;
+border-style: solid;
+
+}
+
+#cardSection {
+   display: grid;
+ grid-template-columns: repeat(3, 1fr); /* 4 columns of equal width */
+  /* grid-template-rows: repeat(4, 1fr);    /* 4 rows of equal height */
+  width: 100%;
+  row-gap: 30px;
+  column-gap: 30px;
+  justify-content: center;
+  padding-left: 35px;
+}
+
+.card {
+  width: 300px;
+background-color: #048BA8;
+  border-radius: 8px;
+  height: 300px; /* optional */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  
+
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#allCards {
+  padding-top: 50px;
+}
+
+.card-back {
+  width: 100%;
+  height: 100%;
+  background-color: #048ba8;
+  border-radius: 8px;
+}
+
+/* Optional: simple flip effect */
+/* .card.flipped {
+  /* you can animate this if you want later 
+} */
+
+#playAgain {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
